@@ -108,6 +108,9 @@ header{
     width: 151px;
     
 }
+.header-list{
+    display: none;
+}
 
 /*SECTION PRESENTATION*/
 .presentation{
@@ -117,14 +120,14 @@ header{
     margin: 16px 16px 40px 16px; 
 /* display: flex; */
 /* flex-direction: column; */
-/* justify-content: space-between; */ */
+/* justify-content: space-between; */ 
 /* border: solid 1px red; */
 
 }
 
 .presentation img{
     /* display: block; */
-    text-align: center;
+    margin: auto;
     max-height: 604px;
     max-width: 611px;
 }
@@ -189,6 +192,21 @@ header{
     min-width: 197px;
     
 }
+.img1{
+    max-height: 392px;
+    max-width: 652px;
+    margin: auto;
+}
+.img2{
+    max-height: 638px;
+    max-width: 628px;
+    margin: auto;
+}
+.img3{
+    max-height: 536px;
+    max-width: 302px;
+    margin: auto;
+}
 
 .proyecto-data{
     padding-top: 40px;
@@ -211,7 +229,8 @@ header{
 }
 
 .proyecto-bot{ 
-    height: 122px;
+    /* height: 122px; */
+    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -333,5 +352,94 @@ div>label::after{
     padding: 24px 16px 24px 32px;
     display: grid;
     grid-row-gap: 8px;
+
+}
+
+
+
+@media screen and (min-width:768px){
+    /*BODY*/
+    body{
+        padding:0px 64px;
+    }
+    /*HEADER*/
+    
+    /*SECTION PRESENTATION*/
+
+    /*SECTION PRE-PROYECTOS*/
+
+    /*PROYECTO*/
+    
+    
+    .proyecto-bot{
+        flex-direction: row-reverse;
+        
+    }
+    .proyecto-bot button{
+        min-width: 165px;
+        min-height: 49px; 
+        
+    }
+    /*COMMENTS*/
+
+    /*TALK*/
+
+    /*FOOTER*/
+       
+}
+
+@media screen and (min-width: 1024px) {
+
+    /*BODY*/
+      
+    /*HEADER*/
+    .header-list{
+        display: inline-flex;
+        gap: 40px;
+    }
+    a{
+        text-decoration: none;
+    }
+    /*SECTION PRESENTATION*/
+    
+    /*SECTION PRE-PROYECTOS*/
+    
+    /*PROYECTO*/
+    .proyecto-bot{
+        display: inline-flex;
+    }
+    /*COMMENTS*/
+    
+    /*TALK*/
+    
+    /*FOOTER*/
+ 
+ }
+
+@media screen and (min-width: 1200px){
+
+    /*BODY*/
+      body{
+          padding: 0px 128px;
+      }
+    /*HEADER*/
+    
+    /*SECTION PRESENTATION*/
+    
+    /*SECTION PRE-PROYECTOS*/
+    
+    /*PROYECTO*/
+    .proyecto-data{
+        justify-content: center;
+    }
+    .proyecto1{
+        flex-direction: row-reverse;
+    }
+    /*COMMENTS*/
+    
+    /*TALK*/
+    
+    /*FOOTER*/
+    
 
 }
