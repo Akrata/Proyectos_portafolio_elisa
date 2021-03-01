@@ -324,6 +324,9 @@ padding: 40px 16px 80px 16px;
 }
 .form-btn{
      height: 49px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
 div>label::after{
     content: "*";
@@ -354,12 +357,16 @@ div>label::after{
     grid-row-gap: 8px;
 
 }
+.footer span{
+    display: none;
+}
 
 
 
 @media screen and (min-width:768px){
     /*BODY*/
     body{
+       
         padding:0px 64px;
     }
     /*HEADER*/
@@ -391,7 +398,14 @@ div>label::after{
 @media screen and (min-width: 1024px) {
 
     /*BODY*/
-      
+    html{
+        background: #8884FF;
+    } 
+    body{
+          width: 1366px;
+          margin: auto;
+          
+      }
     /*HEADER*/
     .header-list{
         display: inline-flex;
@@ -401,18 +415,97 @@ div>label::after{
         text-decoration: none;
     }
     /*SECTION PRESENTATION*/
-    
+    .presentation{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .presentation-text{
+        display: grid;
+        grid-row-gap: 16px;
+        max-width: 543px;
+    }
+    .presentation img{
+        margin: 0;
+    }
     /*SECTION PRE-PROYECTOS*/
     
     /*PROYECTO*/
     .proyecto-bot{
         display: inline-flex;
     }
+    .proyecto img{
+        margin: 0;
+    }
+    .proyecto-data{
+        width: 449px;
+    }
+    .proyecto1 {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 24px;
+        justify-content: center;
+    }
+    .proyecto-data{
+        justify-content: center;
+    }
+    .proyecto2{
+        flex-direction: row;
+    }
+
+    .proyecto3{
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    
     /*COMMENTS*/
-    
+    .comments{
+        padding: 0;
+        }
+    .comments-data{
+        padding: 80px;
+    }
+    .comments-mid{
+        font-size: 34px;
+        line-height: 55px;
+        text-align: center;
+        
+    }
+    .comments-bot{
+        font-size: 24px;
+        line-height: 39px;
+    }
     /*TALK*/
-    
+    .talk{
+        max-width: 543px;
+        margin: auto;
+    }
+    .talk h5{
+        width: 100%;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 55px;
+    }
+    .talk p{
+        text-align: center;
+    }
+
     /*FOOTER*/
+    .footer{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-text{
+        display: flex;
+    }
+    .footer span{
+        display: inline;
+    }
+
  
  }
 
@@ -429,12 +522,7 @@ div>label::after{
     /*SECTION PRE-PROYECTOS*/
     
     /*PROYECTO*/
-    .proyecto-data{
-        justify-content: center;
-    }
-    .proyecto1{
-        flex-direction: row-reverse;
-    }
+    
     /*COMMENTS*/
     
     /*TALK*/
