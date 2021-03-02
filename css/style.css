@@ -86,6 +86,9 @@
     outline: none;
     background: transparent;
 }
+button{
+    cursor: pointer;
+}
 
 /*BODY*/
 body{
@@ -94,6 +97,25 @@ body{
     display: flex;
     flex-direction: column;
 }
+/* .top{
+    position: fixed;
+    background: rgba(255, 255, 255, 0.3);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    border: solid 2px var(--font-color);
+    bottom: 10%;
+    right: 12%;
+    transition: .3s;
+    color: var(--font-color);
+    
+}
+.top:hover{
+    transform: scale(1.1);
+} */
 
 /*HEADER*/
 header{
@@ -104,6 +126,7 @@ header{
     padding: 16px 16px;
 }
 .btn-curriculum{
+    
     height: 49px;
     width: 151px;
     
@@ -122,7 +145,11 @@ header{
 /* flex-direction: column; */
 /* justify-content: space-between; */ 
 /* border: solid 1px red; */
-
+}
+.presentation-text{
+    display: grid;
+    grid-row-gap: 16px;
+    
 }
 
 .presentation img{
@@ -369,6 +396,9 @@ div>label::after{
        
         padding:0px 64px;
     }
+    .top{
+        
+    }
     /*HEADER*/
     
     /*SECTION PRESENTATION*/
@@ -401,18 +431,48 @@ div>label::after{
     html{
         background: #8884FF;
     } 
+    /* .top{
+        width: 100px;
+        height: 50px;
+        background: var(--primary);
+        bottom: 5%;
+        right: 11%;
+    } */
     body{
-          width: 1366px;
-          margin: auto;
-          
+        width: 1366px;
+        margin: auto;
+        
       }
+    section{
+        margin: 80px 0px;
+    }
     /*HEADER*/
+    header{
+        display: flex; 
+        justify-content: start;
+        
+    }
     .header-list{
         display: inline-flex;
         gap: 40px;
+        margin-left: 337px ;
+        margin-right:155px ;
+        
     }
     a{
         text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1.25px;
+        height: 22px;
+        color:rgba(0, 0, 0, 0.5);
+    }
+    .btn-curriculum{
+        width: 250px;
+    }
+    .btn-curriculum::before{
+        content: "DESCARGAR ";
+        
     }
     /*SECTION PRESENTATION*/
     .presentation{
@@ -420,6 +480,7 @@ div>label::after{
         flex-direction: row-reverse;
         align-items: center;
         justify-content: center;
+        margin: 0px;
         
     }
     .presentation-text{
@@ -433,6 +494,9 @@ div>label::after{
     /*SECTION PRE-PROYECTOS*/
     
     /*PROYECTO*/
+    .proyecto{
+        padding: 0;
+    }
     .proyecto-bot{
         display: inline-flex;
     }
@@ -441,6 +505,7 @@ div>label::after{
     }
     .proyecto-data{
         width: 449px;
+        padding: 0;
     }
     .proyecto1 {
         display: flex;
@@ -460,6 +525,7 @@ div>label::after{
         flex-direction: row-reverse;
         justify-content: center;
     }
+
     
     /*COMMENTS*/
     .comments{
@@ -478,10 +544,15 @@ div>label::after{
         font-size: 24px;
         line-height: 39px;
     }
+    .comments img{
+        width: 80px;
+        height: 80px;
+    }
     /*TALK*/
     .talk{
         max-width: 543px;
-        margin: auto;
+        margin: 80px auto;
+        padding: 40px 16px 0px 16px
     }
     .talk h5{
         width: 100%;
@@ -504,6 +575,12 @@ div>label::after{
     }
     .footer span{
         display: inline;
+    }
+
+    .h5{
+        font-weight: 700;
+        font-size: 34px;
+        
     }
 
  

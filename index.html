@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Elisa</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <span class="logo"><img src="statics/img/LOGO.png" alt="Logo"></span>
         <div class="header-list">
             <a class="header-list-selected button" href="#Hola">HOLA</a>
             <a href="#Proyectos" class="button transparent-color">PROYECTOS</a>
             <a href="#Hablemos" class="button transparent-color">HABLEMOS</a>   
         </div>
-        <button class="btn btn-curriculum">CURRÍCULUM</button>
+        <button class="btn btn-curriculum"> CURRÍCULUM</button>
     </header>
-    <section class="presentation">
+    <section class="presentation" id="Hola">
         <img src="statics/img/elisa-SMART.png" alt="Logo" srcset="statics/img/elisa.png 768w" />
         <div class="presentation-text">
             <div class="presentation-name">
@@ -44,7 +44,7 @@
         <h5 class="pre-proyectos-mid h5">Aquí hay algunos que me gustaría compartir.</h5>
         <img class="pre-proyectos-bot" src="statics/icon/icons-down.svg" alt="">
     </section>
-    <section class="proyecto proyecto1">
+    <section class="proyecto proyecto1" id="Proyectos">
         <img class="proyecto-img img1" src="statics/img/proyecto-1.png" alt="" srcset="statics/img/proyecto-1-768w.png 1024w">
         <div class="proyecto-data">
             <h5 class="h5">leonidasesteban.com</h5>
@@ -58,7 +58,7 @@
     </section>
     <section class="comments">
         <div class="comments-data">
-            <img class="comments-img" src="statics/img/user1.png" alt="">
+            <img class="comments-img" src="statics/img/user1.png" alt="" >
             <p class="comments-mid">"Elisa ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo.
                  Lo que nos hubiera llevado 6 meses solo les llevó 1,5 meses ".</p>
             <p class="caption comments-bot">LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM</p>
@@ -78,7 +78,7 @@
     </section>
     <section class="comments">
         <div class="comments-data">
-            <img class="comments-img" src="statics/img/user2.png" alt="">
+            <img class="comments-img" src="statics/img/user2.png" alt="" srcset="statics/img/user2-768.png 768w">
             <p class="comments-mid">"Elisa ha superado mis expectativas desde el diseño hasta el desarrollo".</p>
             <p class="caption comments-bot">JASON LOPEZ / COFUNDADOR Y CEO MARVOL</p>
         </div>
@@ -97,16 +97,16 @@
     </section>
     <section class="comments">
         <div class="comments-data">
-            <img class="comments-img" src="statics/img/user3.png" alt="">
+            <img class="comments-img" src="statics/img/user3.png" alt="" srcset="statics/img/user3-768.png 768w">
             <p class="comments-mid">"Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos".</p>
             <p class="caption comments-bot">MARCO CORTEZ / NETNET</p>
         </div>
     </section>
-    <section class="talk">
+    <section class="talk" id="Hablemos">
         <h5 class="h5">HABLEMOS</h5>
         <p class="body1">Si está interesado en trabajar conmigo en su próximo proyecto,
              no dude en ponerse en contacto conmigo.</p>
-        <form class="form" action="" method="post">    
+        <form class="form">    
             <div class="form-div">
                 <label for="">Nombre completo</label>
                 <input class="body1" type="text" placeholder="Juan">
@@ -120,7 +120,7 @@
                 <textarea class="body1" name="" id="" cols="30" rows="6"></textarea>
             </div>
             <div class="form-div">
-                <button class="btn form-btn" type="submit">ENVIAR MENSAJE</button>
+                <button class="btn form-btn" onclick="enviarForm()">ENVIAR MENSAJE</button>
             </div>
         </form>    
     </section>
@@ -137,5 +137,7 @@
         </div>
         <span><img src="statics/img/LOGO.png" alt="Logo"></span>
     </footer>
+    <!-- <a href="#header" class="top">top</a> -->
+    <script src="js/app.js"></script>
 </body>
 </html>
