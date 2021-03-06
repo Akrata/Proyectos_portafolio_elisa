@@ -96,6 +96,8 @@ body{
     /* height: 6126px; */
     display: flex;
     flex-direction: column;
+   
+    
 }
 /* .top{
     position: fixed;
@@ -225,8 +227,9 @@ header{
     margin: auto;
 }
 .img2{
-    max-height: 638px;
-    max-width: 628px;
+    display: block;
+    margin: auto;
+    width: 320px;
     margin: auto;
 }
 .img3{
@@ -268,7 +271,7 @@ header{
 }
 
 .proyecto-bot button{
-    min-width: 328px;
+    min-width: 300px;
     min-height: 49px;
     display: flex;
     align-items: center;
@@ -525,7 +528,11 @@ div>label::after{
         flex-direction: row-reverse;
         justify-content: center;
     }
-
+    .img2{
+        
+        width:600px;
+        
+    }
     
     /*COMMENTS*/
     .comments{
